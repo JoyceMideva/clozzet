@@ -3,46 +3,21 @@ import watches from "../assets/images/watches.png";
 import hbags from "../assets/images/hbags.png";
 import ladies from "../assets/images/ladies.png";
 import Collect from "./Collect";
-import {BiSolidRightArrow} from "react-icons/bi"
+
 function Collection() {
   return (
-    <div className="container mx-auto gap-3 grid grid-cols-2 grid-rows-3  ">
+    <div className="container py-10  mx-auto gap-3 grid grid-cols-2 grid-rows[200px_200px_200px m-10]  ">
       <div className="bg-[#F0EFEF] row-span-2 ">
-       
-        <Collect
-          icon={men}
-          category="casual collection"
-          collection="mens'collection"
-          shop="shop now"
-          
-        />
+        <Collect icon={men} collection="men's collection" />
       </div>
       <div className="bg-[#E3F9FB] ">
-        <Collect
-          icon={watches}
-          category="casual collection"
-          collection="Luxury Watches"
-          shop="shop now"
-          
-        />
+        <Collect icon={watches} collection="Luxury Watches" />
       </div>
       <div className="bg-[#FEDBDB] row-span-2 ">
-        <Collect
-          icon={ladies}
-          category="casual collection"
-          collection="Ladies Collection"
-          shop="shop now"
-        
-        />
+        <Collect icon={ladies} collection="Ladies Collection" />
       </div>
       <div className="bg-[#FFF1F1] ">
-        <Collect
-          icon={hbags}
-          category="casual collection"
-          collection="Handbags"
-          shop="shop now"
-          
-        />
+        <Collect icon={hbags} collection="Handbags" />
       </div>
     </div>
   );

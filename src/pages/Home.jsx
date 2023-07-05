@@ -3,6 +3,7 @@ import Nav from "../components/Nav";
 import TopCategories from "../components/TopCategories";
 import Collection from "../components/Collection";
 import Footer from "../components/Footer";
+import FeaturedCollections from "../components/FeaturedCollections";
 function Home() {
   return (
     <div>
@@ -11,6 +12,7 @@ function Home() {
         <Hero />
       </div>
       <TopCategories />
+      <FeaturedCollections />
       <Collection />
       <Footer />
     </div>

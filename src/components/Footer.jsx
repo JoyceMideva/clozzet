@@ -7,8 +7,8 @@ import  twitter from "../assets/images/twitter.png";
 function Footer() {
   return (
     <div className=" mx-auto pt-2 bg-slate-200 text-lg ">
-      <h2 className="text-center text-4xl">Subscribe & get up to 30% OFF</h2>
-      <div className=" flex gap-7 justify-center pt-10 mx-auto">
+      <h2 className="text-center text-4xl font-bold">Subscribe & get up to 30% OFF </h2>
+      <div className="  container flex gap-7 justify-center pt-10 mx-auto">
         <input
           className="rounded-full bg-rose border-2  border-[#45c9a1] outline-none  py-4 px-12"
           type="email"
@@ -16,7 +16,7 @@ function Footer() {
         />
         <button className=" bg-[#45c9a1]  rounded-full font-bold text-[#fff] text-lg py-4 px-12">subscribe</button>
       </div>
-      <div className="flex gap-5 justify-between">
+      <div className=" container mx-auto flex gap-5 justify-between pt-10">
       <div className="pt-10 w-40">
         <img  width={130} src={logo} alt="" />
         <p className="text-xl w-60">
@@ -34,7 +34,7 @@ function Footer() {
         <li>Collections</li>
         </ul>
       </div>
-      <div>
+      <div className="pt-10">
       <h3 className="font-bold text-lg">Help</h3>
       <ul>
 
@@ -44,10 +44,10 @@ function Footer() {
         <li>Track Your Order</li>
       </ul>
       </div>
-      <div className="">
+      <div className="pt-10">
       <h3 className="font-bold">  Contact Us</h3>
       
-        <div className="flex gap-4">
+        <div className="flex gap-4 p-4">
       <img  width={40} src={email} alt="" />
          <h5>contact@clozzet.com</h5>
          </div>
@@ -56,7 +56,7 @@ function Footer() {
         <h5>254-700-333-333</h5>
         </div>
         <h4>Follow Us</h4>
-        <div className="flex gap-4">
+        <div className="flex gap-4 p-4">
         <img width={40} src={facebook} alt="" />
         <img width={40} src={instagram} alt="" />
         <img width={40} src={twitter} alt="" />

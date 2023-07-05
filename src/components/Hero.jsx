@@ -1,7 +1,7 @@
 import { PiMagnifyingGlassBold } from "react-icons/pi";
 function Hero() {
   return (
-    <div className="container mx-auto flex">
+    <div className="container mx-auto flex items-center">
       <div className="w-[100%] md:w-[50%] pt-7">
         <h1 className=" md:text-7xl  text-4xl font-bold">
           Choose the look that <span className="text-[#45C9A1]">suits</span> you
@@ -30,7 +30,7 @@ function Hero() {
           />
         </div>
       </div>
-      <div className="w-[50%] tt    hidden md:block bg-right-top bg-no-repeat bg-[url('assets/images/hero2.png')]"></div>
+      <div className="w-[50%] tt hidden md:block bg-right-top bg-no-repeat bg-[url('assets/images/hero2.png')]"></div>
     </div>
   );
 }

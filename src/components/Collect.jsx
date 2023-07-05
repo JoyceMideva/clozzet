@@ -1,16 +1,20 @@
 import men from "../assets/images/mens.png";
-function Collect(props) {
+import { FaPlay } from "react-icons/fa";
+function Collect({collection,icon  }) {
   return (
-    <div>
-      <div>
-        <img width={200} src={props.icon} alt="" />
+    <div className="m-3">
+      <div className="flex justify-center items-end">
         <div>
-          <p className="text-gray">{props.category}</p>
+          <p className="text-lg text-gray-400">Casual Collection</p>
+          <h3 className=" text-xl font-bold">{collection}</h3>
+          <div>
+            <h4 className="">Shop Now</h4>
+            <FaPlay />
+          </div>
         </div>
-
-        <h3 className="font-bold">{props.collection}</h3>
-        <h4 className="">{props.shop}</h4>
-        <h5>{props.react}</h5>
+        <div className="h-[100%] object-cover">
+          <img width={200} src={icon} alt="" />
+        </div>
       </div>
     </div>
   );
