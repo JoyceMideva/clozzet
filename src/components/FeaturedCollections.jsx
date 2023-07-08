@@ -1,5 +1,6 @@
 
  import FeaturedCollection from "./FeaturedCollection"
+
 function FeaturedCollections(){
     return(
         <div className=" text-xl text-center container mx-auto">
