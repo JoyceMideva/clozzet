@@ -2,7 +2,7 @@ import { products } from "../data";
 import { AiOutlineHeart } from "react-icons/ai";
 function FeaturedProducts() {
   return (
-    <div className="container mx-auto grid grid-rows-5 grid-cols-4 my-20  gap-10">
+    <div className="container mx-auto grid grid-rows-5 grid-cols-4 my-20  gap-3">
       {products.map((item) => {
         if (item.Featured) {
           return (
@@ -16,10 +16,10 @@ function FeaturedProducts() {
                   ADD TO CART
                 </button>
               </div>
-              <div className=" flex justify-between items-center">
-                <div>
-                  <p>{item.productName}</p>
-                  <p>{item.productPrice}</p>
+              <div className=" flex gap-11 items-center">
+                <div className="">
+                  <p className="text-xl">{item.productName}</p>
+                  <p className="text-teal-500 text-xl">{item.productPrice}</p>
                 </div>
                 <AiOutlineHeart size={40} />
               </div>

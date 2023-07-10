@@ -1,14 +1,14 @@
-import Carts from "../components/Carts"
 import Footer from "../components/Footer"
 import Nav from "../components/Nav"
+import SinglePages from "../components/SinglePages"
 
-function Cart(){
+function SinglePage(){
     return(
         <div>
 <Nav/>
-<Carts/>
+<SinglePages/>
 <Footer/>
         </div>
     )
 }
-export default Cart
+export default SinglePage
