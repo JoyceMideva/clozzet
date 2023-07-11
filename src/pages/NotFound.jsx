@@ -3,9 +3,9 @@ import Nav from "../components/Nav"
 
 function NotFound() {
     return(
-        <div>
+        <div className="h-[100]">
             <Nav/>
-            <main className="bg-[url(``)]">
+            <main className="bg-[url('assets/images/404.svg')]">
 
 
             </main>
