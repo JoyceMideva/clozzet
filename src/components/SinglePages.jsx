@@ -25,23 +25,39 @@ function SinglePages() {
           </p>
           <div className="flex items-center gap-10 my-6">
           <h3 className="text-xl font-semibold">SELECT SIZE</h3>
-          <div className="bg-white border-2 text-2xl font-bold border-gray-400 w-[30%] px-2 py-4 rounded-full flex gap-10 items-center">
-            <p>40</p>
-            <select name="" id=""></select>
+          <div className="flex items-center justify-center border-2 rounded-full border-x-2 border-gray-300 w-[30%]">
+          <div className="flex-1">
+                <p className="text-3xl font-bold  border-gray-300 p-5 border-r-2 text-center">
+                  40
+                </p>
+              </div>
+           <div className="flex-1"> <select name="" id=""></select></div>
           </div>
           <h3 className="text-xl font-semibold">QUANTITY</h3>
-          <div className="bg-white border-2 px-2 py-4 text-2xl font-bold border-gray-400  border-r-2 w-[30%] rounded-full flex gap-10 items-center">
-            <span>-</span>
-            <span>1</span>
-            <span>+</span>
+          <div className="flex rounded-full items-center justify-center border-2 border-gray-300 w-[30%]">
+              <div className=" flex-1 ">
+                <p className="text-3xl font-bold p-5  border-gray-300 text-center">
+                  -
+                </p>
+              </div>
+              <div className="flex-1">
+                <p className="text-3xl font-bold  border-gray-300 p-5 border-x-2 text-center">
+                  1
+                </p>
+              </div>
+              <div className="flex-1">
+                <p className="text-3xl font-bold  border-gray-300 p-5 text-center">
+                  +
+                </p>
+              </div>
+            </div>
           </div>
-          </div>
-        <div className="flex gap-4 my-5">
-          <button className="bg-teal-500 flex items-center gap-7 rounded-md   font-bold text-white px-2 py-4">
+        <div className="flex gap-10 items-center my-5">
+          <button className=" w-[30%] bg-teal-500 flex items-center gap-7 rounded-md   font-bold text-white px-2 py-4">
             <AiOutlineShoppingCart size={30} />
             ADD TO CART
           </button>
-          <button className=" border-2 border-grey flex rounded-md items-center gap-7   font-bold  px-2 py-4">
+          <button className=" w-[30%] border-2 border-grey flex rounded-md items-center gap-7   font-bold  px-2 py-4">
             <AiOutlineHeart size={30} />
             SAVE TO WISHLIST
           </button>

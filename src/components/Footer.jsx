@@ -6,7 +6,7 @@ import instagram from "../assets/images/instagram.png";
 import  twitter from "../assets/images/twitter.png";
 function Footer() {
   return (
-    <div className=" mx-auto pt-2 bg-slate-200 text-lg ">
+    <div className="  pt-2 bg-slate-200 text-lg ">
       <h2 className="text-center text-4xl font-bold">Subscribe & get up to 30% OFF </h2>
       <div className="  container flex gap-7 justify-center pt-10 mx-auto">
         <input

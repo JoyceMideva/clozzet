@@ -4,6 +4,7 @@ import Shop from "../pages/Shop";
 import SinglePage from "../pages/SinglePage";
 import Cart from "../pages/Cart";
 import NotFound from "../pages/NotFound";
+import SignUp from "../pages/SignUp";
 function Router() {
   return (
     <BrowserRouter>
@@ -13,6 +14,7 @@ function Router() {
         <Route path="/cart"  element={<Cart/>}/>
         <Route path="/product/:productId"  element={<SinglePage/>}/>
         <Route path="*" element={<NotFound/>}/>
+        <Route path="/signup" element={<SignUp/>}/>
       </Routes>
     </BrowserRouter>
   );
