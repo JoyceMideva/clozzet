@@ -18,48 +18,16 @@ function Carts() {
             <p>Size: XL</p>
             </div>
           </div>
-          <div className="flex">
-            <div>
-              <img width={100} src={unisex} alt="" srcset="" />
-            </div>
-            <div>
-            <h4>Unisex Airforce Sneakers</h4>
-            <p>Size: 40</p>
-            </div>
-          </div>
-          <div className="flex">
-            <div>
-              <img width={100} src={slim} alt="" srcset="" />
-            </div>
-            <div>
-            <h4>Slim Banquet Dress</h4>
-            <p>Size: M</p>
-            </div>
-          </div>
-
-          <div className="flex">
-            <img width={100} src={denim} alt="" srcset="" />
-            <div>
-            <h4>Women Denim Jeans</h4>
-            <p>Size: L</p>
-            </div>
-          </div>
         </div>
         <div className="">
           <h3>Quantity</h3>
           <div>
-            <div>-1+</div>
-            <div>-1+</div>
-            <div>-1+</div>
             <div>-1+</div>
           </div>
         </div>
         <div>
           <h3>Price</h3>
           <p>KSh 2250</p>
-          <p>KSh 2000</p>
-          <p>KSh 10,250</p>
-          <p>KSh 10,250</p>
         </div>
         <div className="text-red-700">
             <p>  </p>
