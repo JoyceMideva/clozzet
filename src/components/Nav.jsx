@@ -25,11 +25,12 @@ function Nav() {
           </li>
           </Link>
           <Link to="/signup"><li>sign up</li></Link>
-          <li>
+          <Link to="/login"><li>
             <button className="border-2  border-black  py-2 px-6  rounded-full">
               Log in
             </button>
           </li>
+          </Link>
           <li className="block md:hidden ">
             <FaBars size={25} />
           </li>
