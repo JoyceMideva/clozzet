@@ -1,12 +1,12 @@
 
  import FeaturedCollection from "./FeaturedCollection"
 
-function FeaturedCollections(){
+function FeaturedCollections({cart,setCart}){
     return(
         <div className=" text-xl text-center container mx-auto">
             <h1>Featured Collection</h1>
             <div>
-<FeaturedCollection/>
+<FeaturedCollection cart={cart} setCart={setCart}/>
             </div>
         </div>
     )

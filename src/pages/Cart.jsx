@@ -4,10 +4,10 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import sweater from "../assets/images/knitted-sweater.png";
 import React from "react";
-const Carts = () => {
+const Carts = (cart,setCart) => {
   return (
     <div>
-      <Nav />
+      <Nav cart={cart}  setCart={setCart} />
       <div className="container mx-auto  w-[100%]  my-12 flex justify-between gap-5">
         <div className="  border-2 shadow w-[70%] ">
           <div className="flex justify-around  text-2xl font-bold border-b-2 border-gray-300 p-[1.5em]">

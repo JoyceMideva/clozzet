@@ -1,10 +1,10 @@
 import Footer from "../components/Footer"
 import Nav from "../components/Nav"
 import Logins from "../components/Logins"
-function Login() {
+function Login(cart,setCart) {
     return(
         <div>
-<Nav/>
+<Nav cart={cart} setCart={setCart}/>
 <Logins/>
 <Footer/>
         </div>

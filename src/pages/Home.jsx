@@ -4,15 +4,15 @@ import TopCategories from "../components/TopCategories";
 import Collection from "../components/Collection";
 import Footer from "../components/Footer";
 import FeaturedCollections from "../components/FeaturedCollections";
-function Home() {
+function Home({cart,setCart}) {
   return (
     <div>
       <div className="  bg-contain bg-right-top bg-no-repeat bg-[url('assets/images/background_1.png')]">
-        <Nav />
+        <Nav cart={cart} setCart={setCart}/>
         <Hero />
       </div>
       <TopCategories />
-      <FeaturedCollections />
+      <FeaturedCollections cart={cart} setCart={setCart}/>
       <Collection />
       <Footer />
     </div>

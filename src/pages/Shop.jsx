@@ -3,10 +3,10 @@
 import Footer from "../components/Footer"
 import FeaturedProducts from "../components/FeaturedProducts"
 import FeaturedProduct from "../components/FeaturedProduct"
- function Shop() {
+ function Shop(cart,setCart) {
     return(
         <div>
-<Nav/>
+<Nav cart={cart} setCart={setCart}/>
 <Products/>
 <FeaturedProducts/>
 <FeaturedProduct/>

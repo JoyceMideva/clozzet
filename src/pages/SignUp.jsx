@@ -2,10 +2,10 @@ import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import Sign from "../components/Sign";
 
-function SignUp() {
+function SignUp(cart,setCart) {
     return(
         <div>
-            <Nav/>
+            <Nav cart={cart} setCart={setCart}/>
             <Sign/>
             <Footer/>
         </div>

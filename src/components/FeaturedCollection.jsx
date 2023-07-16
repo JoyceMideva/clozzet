@@ -3,20 +3,20 @@ import { useState } from "react";
 import { SlArrowLeft } from "react-icons/sl";
 import { SlArrowRight } from "react-icons/sl";
 import { AiOutlineHeart } from "react-icons/ai";
-function FeaturedCollection() {
-  const [Cart,setCart] = useState([]);
-  console.log(Cart);
+import {useEffect} from "react"
+function FeaturedCollection({cart,setCart}) {
+  console.log(cart);
   function addToCart(e,product){
     if (e.target.textContent.toLowerCase()==="add to cart") {
       setCart((prev) => [...prev,product]);
       e.target.textContent="Added to cart";
     }
-
+localStorage.setItem("cart",JSON.stringify([...cart,product]))
   }
 
   return (
     <div className="container mx-auto flex  justify-center items-center  my-20  gap-10">
-      {console.log(Cart)}
+      {console.log(cart)}
       <SlArrowLeft size={40} className="cursor-pointer" />
       {products.map((item) => {
         if (item.featured) {
