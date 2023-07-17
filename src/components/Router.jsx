@@ -7,6 +7,7 @@ import NotFound from "../pages/NotFound";
 import SignUp from "../pages/SignUp";
 import Login from "../pages/Login";
 import About from "../pages/About"
+import Form from "../pages/Form";
 function Router({cart, setCart}) {
   return (
     <BrowserRouter>
@@ -19,6 +20,7 @@ function Router({cart, setCart}) {
         <Route path="*" element={<NotFound/>}/>
         <Route path="/signup" element={<SignUp/>}/>
         <Route path="/login" element={<Login/>}/>
+        <Route path="/form" element={<Form/>}/>
       </Routes>
     </BrowserRouter>
   );

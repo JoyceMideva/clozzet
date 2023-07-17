@@ -25,6 +25,9 @@ const cartItems=JSON.parse(localStorage.getItem("cart"))
           <Link to="/aboutus">
             <li className="hidden md:block ">About us</li>
           </Link>
+          <Link to="/form">
+            <li className="hidden md:block ">ADD</li>
+          </Link>
           <Link to="/shop">
             <li className="hidden md:block ">Shop</li>
           </Link>
