@@ -30,7 +30,6 @@ function Aboutus() {
           various aspects of businesses.
         </p>
         <p className="text-2xl">
-          {" "}
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
           ab illo inventore veritatis et quasi architecto beatae vitae dicta
@@ -40,9 +39,11 @@ function Aboutus() {
           dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
         </p>
       </div>
-      <div className="flex container mx-auto items-center justify-between gap-11">
-        <div className="h-[400px] w-[300px] px-4 text-2xl border-2 rounded-md text-center ">
+      <div className="flex container mx-auto items-center justify-center  gap-11">
+        <div className="h-[400px] w-[500px] text-2xl shadow-2xl shadow-gray-400 p-6 rounded-md text-center ">
+          <div className="flex justify-center">
           <img src={Mission} alt="" srcset="" />
+          </div>
           <h4 className="text-2xl font-bold">Mission</h4>
           <p>
             To innovate,To lead,to enhance,to provide best-valueproducts and
@@ -50,8 +51,10 @@ function Aboutus() {
             customers and employees.
           </p>
         </div>
-        <div className="h-[400px] w-[300px] text-2xl border-2 px-2 rounded-md  text-center">
+        <div className="h-[400px] w-[500px] text-2xl shadow-2xl shadow-gray-400 p-6 rounded-md  text-center">
+          <div className="flex justify-center">
           <img src={Vision} alt="" srcset="" />
+          </div>
           <h4 className="text-2xl font-bold">Vision</h4>
           <p>
             To be a global leader in fashion- knit & fashion outerwear by
@@ -59,15 +62,17 @@ function Aboutus() {
             satisfaction.
           </p>
         </div>
-        <div className="h-[400px] w-[300px] text-2xl border-2 px-2 rounded-md  text-center">
+        <div className="h-[400px] w-[500px] text-2xl shadow-2xl shadow-gray-400 p-6 rounded-md  text-center">
+         <div className="flex justify-center">
           <img className="" src={Values} alt="" srcset="" />
+          </div>
           <h4 className="text-2xl font-bold">Core Values</h4>
-          <ol>
+          <ul>
             <li>Passion</li>
             <li>Perfomance</li>
             <li>Simplicity</li>
             <li>Togetherness</li>
-          </ol>
+          </ul>
         </div>
       </div>
       <div className="container mx-auto py-6">
