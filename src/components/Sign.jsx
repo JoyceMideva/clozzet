@@ -1,10 +1,10 @@
 import google from "../assets/images/google.png";
 function Sign() {
   return (
-    <div className="container mx-auto">
-      <h2 className="font-extrabold text-5xl">Create An Account</h2>
+    <div className="container mx-auto ">
+      <h2 className="font-extrabold text-5xl ">Create An Account</h2>
       <div className="flex gap-11 py-10 ">
-        <div className="flex-1">
+        <div className="flex-1 mx-7">
           <div className="flex gap-4">
             <input
               className="outline-none my-5 py-4 px-2 border-2 border-grey-400 rounded-full w-[50%]"
@@ -55,7 +55,7 @@ function Sign() {
           </button>
           <p className="text-xl">Already Have An Account? Log In</p>
         </div>
-        <div className="flex-1 bg-[url('assets/images/signup.png')] bg-cover  bg-no-repeat"></div>
+        <div className="flex-1 bg-[url('assets/images/signup.png')] bg-contain mx-7  bg-no-repeat"></div>
       </div>
     </div>
   );

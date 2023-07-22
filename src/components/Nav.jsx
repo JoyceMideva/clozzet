@@ -6,7 +6,7 @@ import { useEffect } from "react";
 function Nav({cart,setCart}) {
 useEffect(()=>{
 const cartItems=JSON.parse(localStorage.getItem("cart"))
- cartItems &&setCart(cartItems)
+ cartItems && setCart(cartItems)
 
 },[])
 

@@ -1,4 +1,5 @@
 import { PiMagnifyingGlassBold } from "react-icons/pi";
+import { Link } from "react-router-dom";
 function Hero() {
   return (
     <div className="container mx-auto flex items-center">
@@ -14,12 +15,12 @@ function Hero() {
           beautiful.True style never dies.
         </p>
         <div className="flex gap-7">
-          <button className=" sm:px-6 border-2 py-4 px-12  bg-[#45c9a1] rounded-full font-bold text-[#fff] text-lg">
+          <Link to="/shop"><button className=" sm:px-6 border-2 py-4 px-12  bg-[#45c9a1] rounded-full font-bold text-[#fff] text-lg">
             Shop Now
-          </button>
-          <button className="  shadow-md border-2 py-4 px-12 sm:px-6  bg-[#fff] rounded-full font-bold text-[#45c9a1] text-lg">
+          </button></Link>
+         <Link to="/aboutus"><button className="  shadow-md border-2 py-4 px-12 sm:px-6  bg-[#fff] rounded-full font-bold text-[#45c9a1] text-lg">
             About Us
-          </button>
+          </button></Link>
         </div>
         <div className="flex bg-white items-center border-2 rounded-full  px-2 my-7 w-[100%]">
           <PiMagnifyingGlassBold size={40} />

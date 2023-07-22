@@ -2,7 +2,7 @@ const products = [
   {
     img: "leather-jacket.png",
     productName: "Leather Jacket",
-    productPrice: " Ksh 2250",
+    productPrice:  2250,
     productDescription:
       "Fashion Women Coat leather lapel jacket,Medium size Casual Jacket",
     featured: true,
@@ -10,7 +10,7 @@ const products = [
   {
     img: "sweatshirts.png",
     productName: "Round-neck Sweatshirts",
-    productPrice: " Ksh 2000",
+    productPrice: 2000,
     productDescription:
       "Rounded T-shirt round neck solid color long sleeves autmn winter botique pullover bottoming sweater",
     featured: true,
@@ -18,14 +18,14 @@ const products = [
   {
     img: "pallazo.png",
     productName: "Pleated Pallazo Trousers",
-    productPrice: " Ksh 1800",
+    productPrice: 1800,
     productDescription: "Fashion pallazo two pieces vintage baggy trouser",
     featured: true,
   },
   {
     img: "denim.png",
     productName: "M-22 Denim Jacket",
-    productPrice: " Ksh 1,250",
+    productPrice:1250,
     productDescription:
       "Denim Lightweight long sleeve slim casual collar denim jacket ",
     featured: true,
@@ -34,7 +34,7 @@ const products = [
   {
     img: "ragged-jeans.png",
     productName: "Blue Ragged Jeans",
-    productPrice: "Ksh 2,250",
+    productPrice:2250,
     Featured: true,
     productDescription:
       "Business, work, office, shopping, vacation, vacation, leisure, picnic, country rock, festival, grand, celebration, wedding reception and casual everyday life",
@@ -42,7 +42,7 @@ const products = [
   {
     img: "slim-banquet-dress.png",
     productName: "Slim Banquet Dress",
-    productPrice: "10,250",
+    productPrice:10250,
     productDescription:
       "soft fabric, breathable and comfortable to wear, fit formal, evening, wedding, gala, party, prom, homecoming, graduation, special occasion.",
     Featured: true,
@@ -51,7 +51,7 @@ const products = [
   {
     img: "quartz-watch.png",
     productName: "Quartz Men’s Watch",
-    productPrice: "Ksh 2,250",
+    productPrice:2250,
     productDescription:
       "battery powered watch made by stainless steel and attached  by a golden  watch strap",
     Featured: true,
@@ -60,7 +60,7 @@ const products = [
   {
     img: "denim-jeans.png",
     productName: "Women Denim Jeans",
-    productPrice: "Ksh 2,250",
+    productPrice:  2250,
     productDescription:
       "a sturdy cotton twill fabric woven blue denim  jeans with moisture absorbing ability",
     Featured: true,
@@ -68,7 +68,7 @@ const products = [
   {
     img: "knitted-sweater.png",
     productName: "Strip Knitted Sweater",
-    productPrice: "Ksh 2,250",
+    productPrice: 2250,
     Featured: true,
     productDescription:
       "Pull-over collarless garment made of heavy cotton blend material worn majorly on cold seasons.",
@@ -76,14 +76,14 @@ const products = [
   {
     img: "smartwatch.png",
     productName: "Classy Smart Watch",
-    productPrice: "Ksh 2,250",
+    productPrice:  2250,
     Featured: true,
     productDescription:
       "Portable and designed wrist watch that uses touch screens and offer apps",
   },
   {
     img: "Off-The-Shoulder.png",
-    productPrice: "KSh 2,250",
+    productPrice: 2250,
     productName: "Off-Shoulder Crop Top",
     Featured: true,
     productDescription:
@@ -92,7 +92,7 @@ const products = [
   {
     img: "cocktail.png",
     productName: "Blue Cocktail Dress",
-    productPrice: "KSh 2,250",
+    productPrice:  2250,
     Featured: true,
     productDescription:
       "a woman's garment that usually displays a shorter  length and worn  when one has been invited to a cocktail part",
@@ -100,14 +100,14 @@ const products = [
   {
     img: "brown-handbag.png",
     productName: "Brown handbag",
-    productPrice: "Ksh 2,250",
+    productPrice: 2250,
     Featured: true,
     productDescription:
       "Brown large womens bag.Large capacity shoulder bags. Pu Leather Shoulder Bags.Ladies Wild Bags Sac A main Femme(#Brown)",
   },
   {
     img: "leather-shoes.png",
-    productPrice: "Ksh 2,250",
+    productPrice:  2250,
     productName: "Pure Leather Shoes",
     Featured: true,
     productDescription:
@@ -116,7 +116,7 @@ const products = [
   {
     img: "bomber.png",
     productName: "Black Bomber Jacket",
-    productPrice: "Ksh 2,250",
+    productPrice:  2250,
     Featured: true,
     productDescription:
       "The style attributes of a bomber jacket (generally) include a cropped length, looser arms and shoulders, and ribbed collars, waistbands and cuffed sleeves. Bombers can be made in a variety of materials and cuts that reflect the outwear's ability to work with any one's style",
@@ -124,7 +124,7 @@ const products = [
   {
     img: "unisex.png",
     productName: "Unisex Airforce Sneakers",
-    productPrice: "Ksh 2,250",
+    productPrice:  2250,
     Featured: true,
     productDescription:
       "The shoe is made with leather upper for comfort and durability, with a cushioned midsole for a smooth and comfortable ride and a rubber sole for traction and durability. The traditional encapsulated Nike Air unit is still present, to ensure lightweight cushioning and impact protection",
@@ -132,7 +132,7 @@ const products = [
   {
     img: "Airsense-pleated.png",
     productName: "Airsense Pleated Pants",
-    productPrice: "Ksh 2,250",
+    productPrice: 2250,
     Featured: true,
     productDescription:
       "lightWeight,stretchy and quick-drying fabric jointly developed with to ray",
@@ -140,7 +140,7 @@ const products = [
   {
     img: "ZOOSHI-COBALT.png",
     productName: "Blue Platform Heels",
-    productPrice: "Ksh 2,250",
+    productPrice: 2250,
     Featured: true,
     productDescription:
       "chunky block high heel,an ankle strap and a supper high platform sole",
@@ -148,7 +148,7 @@ const products = [
   {
     img: "graphic-tshirts.png",
     productName: "Unisex Graphic T-shirt",
-    productPrice: "Ksh 2,250",
+    productPrice: 2250,
     Featured: true,
     productDescription:
       "Perfect for birthdays, Christmas, Eid, Hanukkah, Valentine's Day, anniversaries, and other celebrations as well as for any other gift-giving occasion.",
@@ -156,7 +156,7 @@ const products = [
   {
     img: "pallazo.png",
     productName: "Pleated Pallazo Pants",
-    productPrice: "Ksh 2,250",
+    productPrice: 2250,
     Featured: true,
     productDescription:
       "Women's high waist casual pants with pockets and front tie knot, makes you look more fashionable and slender",
@@ -164,7 +164,7 @@ const products = [
   {
     img: "leather-jacket.png",
     productName: "Brown Leather Jacket",
-    productPrice: "Ksh 2,250",
+    productPrice: 2250,
     Featured: true,
     productDescription:
       "lightWeight,stretchy and quick-drying fabric jointly developed with to ray",
@@ -172,7 +172,7 @@ const products = [
   {
     img: "denim.png",
     productName: "Blue Denim Jacket",
-    productPrice: "Ksh 2,250",
+    productPrice: 2250,
     Featured: true,
     productDescription:
       "chunky block high heel,an ankle strap and a supper high platform sole",
@@ -180,7 +180,7 @@ const products = [
   {
     img: "sweatshirts.png",
     productName: "Brown Leather Jacket",
-    productPrice: "Ksh 2,250",
+    productPrice: 2250,
     Featured: true,
     productDescription:
       "Perfect for birthdays, Christmas, Eid, Hanukkah, Valentine's Day, anniversaries, and other celebrations as well as for any other gift-giving occasion.",
@@ -188,7 +188,7 @@ const products = [
   {
     img: "serpenti-forever.png",
     productName: "Purple Serpenti purse",
-    productPrice: "Ksh 2,250",
+    productPrice: 2250,
     Featured: true,
     productDescription:
       "Women's high waist casual pants with pockets and front tie knot, makes you look more fashionable and slender",

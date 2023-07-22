@@ -13,14 +13,14 @@ function Router({cart, setCart}) {
     <BrowserRouter>
       <Routes>
         <Route path="/"  element={<Home cart={cart} setCart={setCart}/>}/>
-        <Route path="/aboutus" element={<About/>}/>
-        <Route path="/shop"  element={<Shop/>}/>
-        <Route path="/cart"  element={<Cart/>}/>
+        <Route path="/aboutus" element={<About cart={cart} setCart={setCart}/>}/>
+        <Route path="/shop"  element={<Shop cart={cart} setCart={setCart} />}/>
+        <Route path="/cart"  element={<Cart cart={cart} setCart={setCart}/>} />
         <Route path="/product/:productId" element={<SinglePage/>}/>
-        <Route path="*" element={<NotFound/>}/>
-        <Route path="/signup" element={<SignUp/>}/>
-        <Route path="/login" element={<Login/>}/>
-        <Route path="/form" element={<Form/>}/>
+        <Route path="*" element={<NotFound/>} cart={cart} setCart={setCart}/>
+        <Route path="/signup" element={<SignUp cart={cart} setCart={setCart}/>}/>
+        <Route path="/login" element={<Login cart={cart} setCart={setCart}/>}/>
+        <Route path="/form" element={<Form cart={cart} setCart={setCart}/>}/>
       </Routes>
     </BrowserRouter>
   );

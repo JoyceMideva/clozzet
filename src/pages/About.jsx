@@ -5,7 +5,7 @@ function About(cart,setCart){
     return(
         <div>
 <Nav cart={cart} setCart={setCart}/>
-<Aboutus/>
+<Aboutus cart={cart} setCart={setCart}/>
 <Footer/>
         </div>
     )
