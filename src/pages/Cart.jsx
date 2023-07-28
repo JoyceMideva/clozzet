@@ -3,15 +3,17 @@ import { RiDeleteBin5Line } from "react-icons/ri";
 import Footer from "../components/Footer";
 import sweater from "../assets/images/knitted-sweater.png";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect,useContext } from "react";
+import { StateContext } from "../context/state"
 import EmptyCart from "../components/EmptyCart";
-const Carts = ({ cart, setCart }) => {
+import { FaCopyright } from "react-icons/fa";
+const Carts = () => {
   const [copyCart, setCopyCart] = useState([]);
   useEffect(() => {
     const cartData = localStorage.getItem("cart");
     cartData && setCopyCart(JSON.parse(cartData));
   }, []);
-  const cartSum = cartItems.reduce( (accumulator, currentValue) => accumulator + currentValue.ProductPrice, 0, )
+  // const cartPrice=localStorage.getItem("cart",JSON.stringify([...cart, productPrice])  )
   function manageCart(action, product) {
     if (action === "add") {
       setCopyCart((prev) => [...prev, product]);
@@ -32,7 +34,6 @@ const Carts = ({ cart, setCart }) => {
         <EmptyCart className="flex-1" />
       ) : (
         <div className="container mx-auto  w-[100%]  my-12 flex gap-5">
-          {console.log(cartSum)}
           <div className="  border-2 shadow w-[70%] ">
             <div className="flex justify-evenly  text-2xl font-bold border-b-2  border-gray-300 p-[1.5em]">
               <h3>Product</h3>
@@ -93,7 +94,11 @@ const Carts = ({ cart, setCart }) => {
                   </div>
                   <div className="w-[30%]">
                     <p className="font-bold text-3xl text-center">
-                      {item.productPrice}
+                      {`Ksh. ${copyCart
+                        .filter(
+                          (element) => element.productName === item.productName
+                        )
+                        .reduce((acc, curr) => acc + curr.productPrice, 0).toLocaleString()}`}
                     </p>
                   </div>
                   <div className="group">
@@ -132,15 +137,17 @@ const Carts = ({ cart, setCart }) => {
               <div className="m-[1em] text-3xl">
                 <div className=" flex justify-between  ">
                   <h4>Subtotal</h4>
-                  <p>KSh 16,000</p>
+                  <p>{`Ksh. ${copyCart
+                        .reduce((acc, curr) => acc + curr.productPrice, 0).toLocaleString()}`}</p>
                 </div>
                 <div className=" flex justify-between ">
                   <h4>Delivery Fee</h4>
-                  <p>KSh 450</p>
+                  <p>ksh 450</p>
                 </div>
                 <div className=" flex justify-between border-b-2">
                   <h4>Total</h4>
-                  <p className="">KSh 16,450</p>
+                  <p className="">{`Ksh. ${copyCart
+                        .reduce((acc, curr) => acc + curr.productPrice, 0+450).toLocaleString()}`}</p>
                 </div>
               </div>
               <div className="flex justify-center">

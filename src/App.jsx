@@ -4,7 +4,11 @@ import Cart from "./pages/Cart";
 import SinglePage from "./pages/SinglePage";
 import { useState } from "react";
 import Router from "./components/Router";
+import StateProvider from "./context/state";
 export default function App() {
-  const [cart, setCart] = useState([]);
-  return <Router cart={cart} setCart={setCart} />;
+  return (
+    <StateProvider>
+      <Router/>
+    </StateProvider>
+  )
 }

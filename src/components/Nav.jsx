@@ -2,8 +2,12 @@ import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.svg";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaBars } from "react-icons/fa";
-import { useEffect } from "react";
-function Nav({cart,setCart}) {
+import { useEffect,useContext,useState } from "react";
+import { StateContext } from "../context/state";
+function Nav() {
+
+const {cart,setCart}=useContext(StateContext)
+
 useEffect(()=>{
 const cartItems=JSON.parse(localStorage.getItem("cart"))
  cartItems && setCart(cartItems)

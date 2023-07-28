@@ -62,12 +62,12 @@ function Aboutus() {
             satisfaction.
           </p>
         </div>
-        <div className="h-[400px] w-[500px] text-2xl shadow- shadow-gray-400 p-6 rounded-md  text-center">
+        <div className="h-[400px] w-[500px] text-2xl shadow-2xl shadow-gray-400 p-6 rounded-md  text-center">
          <div className="flex justify-center">
           <img className="" src={Values} alt="" srcset="" />
           </div>
           <h4 className="text-2xl font-bold">Core Values</h4>
-          <ul>
+          <ul className="">
             <li>Passion</li>
             <li>Perfomance</li>
             <li>Simplicity</li>

@@ -1,12 +1,12 @@
 import { products } from "../data";
-import { useState } from "react";
+import { useState,useEffect ,useContext} from "react";
 import { SlArrowLeft } from "react-icons/sl";
 import { SlArrowRight } from "react-icons/sl";
 import { AiOutlineHeart } from "react-icons/ai";
-import {useEffect} from "react";
 import { addToCart, addToCartText} from "../helpers";
-
-function FeaturedCollection({cart,setCart}) {
+import { StateContext } from "../context/state"
+function FeaturedCollection() {
+  const {cart,setCart}=useContext(StateContext)
   return (
     <div className="container mx-auto flex  justify-center items-center  my-20  gap-10">
       {console.log(cart)}
@@ -22,7 +22,7 @@ function FeaturedCollection({cart,setCart}) {
                 />
                 <button
                 
-                  onClick={(e) => addToCart(e,item,cart,setCart)}
+                  onClick={(e) => addToCart(e,item, cart,setCart)}
                   className=" invisible group-hover:visible bg-teal-500 py-4 px-12  w-[100%]  rounded-md absolute bottom-0 left-0 text-[#fff]"
                 >
                  {addToCartText(cart, item)}
